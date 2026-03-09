@@ -2,8 +2,8 @@ import tiktoken
 
 def estimate_tokens(text):
 
-    encoding = tiktoken.get_encoding("cl100k_base")
+    enc = tiktoken.get_encoding("cl100k_base")
 
-    tokens = encoding.encode(text)
+    tokens = enc.encode(text)
 
     return len(tokens)
